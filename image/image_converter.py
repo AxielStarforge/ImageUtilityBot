@@ -2,7 +2,7 @@ import cv2
 import logging
 from aiogram import types
 from .image_handler import ImageHandler
-from enum.image_size import ImageSize
+from enums.image_size import ImageSize
 from error.processing_error import ProcessingError
 
 logger = logging.getLogger(__name__)

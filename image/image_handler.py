@@ -5,7 +5,7 @@ import logging
 from abc import ABC, abstractmethod
 from aiogram import types
 from aiogram.types import BufferedInputFile
-from enum.image_size import ImageSize
+from enums.image_size import ImageSize
 from error.processing_error import ProcessingError
 
 logger = logging.getLogger(__name__)

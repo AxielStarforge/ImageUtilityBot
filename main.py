@@ -4,7 +4,7 @@ import logging
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
-from bot.image_utility_bot import ImageUtilityBot  
+from image.image_utility_bot import ImageUtilityBot  
 
 # Load environment variables
 load_dotenv()

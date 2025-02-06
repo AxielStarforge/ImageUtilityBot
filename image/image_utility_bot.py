@@ -5,11 +5,11 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
-from image.image_processing import ImageProcessing
-from image.image_handler import ImageHandler
-from image.image_converter import ImageConverter
-from image.background_remover import BackgroundRemover
-from enum.image_size import ImageSize
+from .image_processing import ImageProcessing
+from .image_handler import ImageHandler
+from .image_converter import ImageConverter
+from .background_remover import BackgroundRemover
+from enums.image_size import ImageSize
 from error.processing_error import ProcessingError
 
 logger = logging.getLogger(__name__)
