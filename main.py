@@ -4,7 +4,7 @@ import logging
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
-from bot.utility_master_bot import UtilityMasterBot  
+from bot.image_utility_bot import ImageUtilityBot  
 
 # Load environment variables
 load_dotenv()
@@ -32,7 +32,7 @@ async def main():
         os.makedirs("downloads", exist_ok=True)
 
         # Initialize and run the bot
-        utility_bot = UtilityMasterBot(bot, dp)
+        utility_bot = ImageUtilityBot(bot, dp)
         logger.info("Starting bot...")
         await utility_bot.run()
 
